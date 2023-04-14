@@ -1,0 +1,101 @@
+:root {
+    --ff-lato: 'Lato', sans-serif;
+
+    --clr-main-theme: #335AA0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-lato);
+}
+
+body :hover {
+    user-select: var(--clr-main-theme);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    text-align: center;
+}
+
+main .img-box img {
+    width: 300px;
+    margin-top: 20px;
+}
+
+main .title-box {
+    margin: 20px;
+    font-size: 2rem;
+}
+
+main .title-box p {
+    color: #335AA0;
+    font-weight: 600;
+}
+
+main .sub-title-box {
+    margin: 12px;
+}
+
+main .box-no-1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box-no-1 .container {
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+
+}
+
+main .box-no-1 .container .contents {
+    margin: 20px;
+    display: block;
+    background-color: var(--clr-main-theme);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main .box-no-1 .container .contents .title p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+}
+
+main .box-no-1 .container .contents .button-box a {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    display: block;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    main .box-no-1 .container {
+        margin: 20px;
+        padding: 20px;
+        width: 400px;
+        box-shadow: var(--clr-main-theme) 0px 0px 20px 5px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main .box-no-1 .container {
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: var(--clr-main-theme) 0px 0px 20px 5px;
+        border-radius: 10px;
+    }
+}

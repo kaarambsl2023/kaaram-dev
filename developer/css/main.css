@@ -1,0 +1,164 @@
+/*  */
+
+:root {
+    --ff-lato: 'Lato', sans-serif;
+
+    --clr-main-theme: #335AA0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-lato);
+}
+
+body :hover {
+    user-select: var(--clr-main-theme);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    text-align: center;
+}
+
+main .img-box {
+    box-shadow: 0 0 10px 1px var(--clr-main-theme);
+}
+
+main .img-box img {
+    width: 300px;
+    margin: 10px;
+}
+
+main .title-box {
+    margin: 20px;
+    font-size: 2rem;
+}
+
+main .title-box p {
+    color: #335AA0;
+    font-weight: 600;
+}
+
+main .profile-container .grid-container .left-img-box img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+main .profile-container .grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+main .profile-container .grid-container .right-info-box .name {
+    font-weight: 600;
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--clr-main-theme);
+}
+
+main .profile-container .grid-container .right-info-box .description {
+    text-align: left;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+main .note-box {
+    margin: 10px;
+    text-align: left;
+    background-color: #5e94f8;
+    color: white;
+    padding: 10px;
+}
+
+main .box-no-1 .container {
+    margin: 20px;
+}
+
+main .box-no-1 .container .contents {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+}
+
+main .box-no-1 .container .contents .cards {
+    border: 2px solid var(--clr-main-theme);
+}
+
+
+
+main .box-no-1 .container .contents .cards .title .topic-title {
+    margin-top: 5px;
+} 
+
+
+
+main .box-no-1 .container .contents .title {
+    margin: 10px;
+}
+
+main .box-no-1 .container .contents .title .topic-no {
+    font-weight: 600;
+    color: var(--clr-main-theme);
+    font-size: 1.6rem;
+}
+
+/* CARD BUTTON */
+
+main .box-no-1 .container .contents .button-box a {
+    padding: 10px;
+    background-color: var(--clr-main-theme);
+    display: block;
+    color: white;
+}
+
+main .box-no-1 .container .contents .button-box a:hover {
+    background-color: white;
+    color: var(--clr-main-theme);
+    outline:  2px solid var(--clr-main-theme);
+}
+
+
+@media only screen and (max-width: 850px) {
+    main .box-no-1 .container .contents {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main .box-no-1 .container {
+        margin: 20px;
+        padding: 20px;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    main .box-no-1 .container .contents {
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main .box-no-1 .container {
+        margin: 20px;
+        padding: 20px;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    main .box-no-1 .container .contents {
+        grid-template-columns: 1fr ;
+    }
+}

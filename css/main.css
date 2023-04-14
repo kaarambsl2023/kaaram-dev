@@ -1,0 +1,65 @@
+:root {
+    --ff-lato: 'Lato', sans-serif;
+
+    --clr-main-theme: #335AA0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-lato);
+}
+
+body :hover {
+    cursor: not-allowed;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main .main-content .container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+main .main-content .container .contents .title-box p {
+    font-size: 4rem;
+    color: var(--clr-main-theme);
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+main .main-content .container .contents .img-box img {
+    width: 400px;
+}
+
+main .main-content .container .sub-title {
+    margin-top: 20px;
+}
+
+main .main-content .container .sub-title p.highlight-p {
+    color: var(--clr-main-theme);
+}
+
+main .main-content .container .sub-title p.highlight-p:hover {
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+    main .main-content .container .contents .img-box img {
+        width: 200px;
+    }
+
+    main .main-content .container .contents .title-box p {
+        font-size: 2rem;
+    }
+}
